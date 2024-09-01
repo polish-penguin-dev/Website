@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+    background-color: #191919;
+    margin: 0px;
+    height: 0px;
+}
+
+h1 {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 3em;
+}
+
+p {
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 24px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    column-gap: 200px;
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(35%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+
+.blue {
+    color: royalblue;
+}
+
+.profile {
+    width: 40vw;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 50%; 
+}
